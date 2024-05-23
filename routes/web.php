@@ -14,9 +14,7 @@ use App\Http\Controllers\PortfolioController;
 |
 */
 
-Route::get('/', function () {
-    return view('portfolio.index');
-});
+Route::get('/', [PortfolioController::class, 'index'])->name('index');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
