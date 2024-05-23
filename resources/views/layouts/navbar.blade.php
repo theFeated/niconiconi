@@ -8,11 +8,11 @@
                 <div class="header__nav__option">
                     <nav class="header__nav__menu mobile-menu">
                         <ul>
-                            <li class="active"><a href="{{ route('index') }}">Home</a></li>
-                            <li><a href="{{ route('about') }}">About</a></li>
-                            <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
-                            <li><a href="{{ route('services') }}">Services</a></li>
-                            <li><a href="{{ route('contact') }}">Contact</a></li>
+                            <li{{ Request::routeIs('index') ? ' class=active' : '' }}><a href="{{ route('index') }}">Home</a></li>
+                            <li{{ Request::routeIs('about') ? ' class=active' : '' }}><a href="{{ route('about') }}">About</a></li>
+                            <li{{ Request::routeIs('portfolio') ? ' class=active' : '' }}><a href="{{ route('portfolio') }}">Portfolio</a></li>
+                            <li{{ Request::routeIs('services') ? ' class=active' : '' }}><a href="{{ route('services') }}">Services</a></li>
+                            <li{{ Request::routeIs('contact') ? ' class=active' : '' }}><a href="{{ route('contact') }}">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="header__nav__social">

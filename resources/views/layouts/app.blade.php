@@ -3,7 +3,9 @@
 
 @include('layouts.head')
 
-<!-- @include('layouts.preloader') -->
+@unless (Route::currentRouteName() == 'contact')
+    @include('layouts.preloader')
+@endunless
 
 <body id="page-top">
   <!-- Page Wrapper -->

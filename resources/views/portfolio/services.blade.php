@@ -53,9 +53,13 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-10 text-center">
                         <div class="callto__text">
-                            <h2>CREATE AWESOME WEBSITES AND VIDEOS WITH MY POWERFUL FEATURES</h2>
-                            <p>Combines all the features you need to easily create professional Websites and Videos</p>
-                            <a href="#">Start your project</a>
+                        <h2>DISCOVER THE POSSIBILITIES WITH MY WEBSITE AND VIDEO SERVICES</h2> 
+                        <p>Looking for a reliable and creative partner to help you bring your website 
+                            and video ideas to life? Look no further! With a focus on delivering 
+                            high-quality results and exceptional customer service, I'm here to help 
+                            you achieve your goals. Check out my portfolio to see some of my recent 
+                            projects and get inspired for your next venture.</p> 
+                            <a href="{{ route('portfolio') }}" class="cta-button">View my portfolio</a>
                         </div>
                     </div>
                 </div>

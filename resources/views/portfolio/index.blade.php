@@ -15,7 +15,7 @@
                                 <div class="hero__text">
                                     <span>FOR WEB DEVELOPMENT</span>
                                     <h2>Hi I am <br> FRANCIS NICO ESLAWAN</h2>
-                                    <a href="#" class="primary-btn">See more about us</a>
+                                    <a href="{{ route('about') }}" class="primary-btn">See more about us</a>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +63,7 @@
                             </div>
                             <p>If you hire me you will get a professional to make a custom
                                 web or video for your business and, once the project is over.</p>
-                            <a href="#" class="primary-btn">View all services</a>
+                            <a href="{{ route('services') }}" class="primary-btn">View all services</a>
                         </div>
                     </div>
                     <div class="col-lg-8">
@@ -115,7 +115,7 @@
                     <div class="col-lg-8">
                         <div class="callto__text">
                             <h2>Fresh Ideas, Fresh Moments Giving Wings to your Projects.</h2>
-                            <a href="#">Start your project with me</a>
+                            <a href="{{ route('portfolio') }}" class="cta-button">View my portfolio</a>
                         </div>
                     </div>
                 </div>
