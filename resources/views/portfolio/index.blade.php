@@ -8,47 +8,24 @@
         <!-- Hero Section Begin -->
         <section class="hero">
             <div class="hero__slider owl-carousel">
-                <div class="hero__item set-bg" data-setbg="portfolio_assets/img/hero/hero-1.png">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="hero__text">
-                                    <span>FOR WEB DEVELOPMENT</span>
-                                    <h2>Hi I am <br> FRANCIS NICO ESLAWAN</h2>
-                                    <a href="{{ route('about') }}" class="primary-btn">See more about us</a>
+                @foreach($heroItems as $item)
+                    <div class="hero__item set-bg" data-setbg="{{ Voyager::image($item->background_image_url) }}">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="hero__text">
+                                        <span>{{ $item->subtitle }}</span>
+                                        <h2>{{ $item->title }}</h2>
+                                        <a href="{{ $item->link_url }}" class="primary-btn">See more about us</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="hero__item set-bg" data-setbg="portfolio_assets/img/hero/bg1.jpg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="hero__text">
-                                    <span>I AM</span>
-                                    <h2>WEB DEVELOPER</h2>
-                                    <a href="#" class="primary-btn">See more about us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero__item set-bg" data-setbg="portfolio_assets/img/hero/bg3.jpg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="hero__text">
-                                    <span>I AM</span>
-                                    <h2>Picture and Video Editor</h2>
-                                    <a href="#" class="primary-btn">See more about us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </section>
+
         <!-- Hero Section End -->
 
         <!-- Services Section Begin -->

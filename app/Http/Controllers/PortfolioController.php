@@ -7,6 +7,7 @@ use App\Models\Service;
 use App\Models\Counter;
 use App\Models\Testimonials;
 use App\Models\Portfolio;
+use App\Models\HeroItem;
 
 class PortfolioController extends Controller
 {
@@ -14,8 +15,9 @@ class PortfolioController extends Controller
     {
         $services = Service::orderBy('created_at', 'ASC')->get();
         $counters = Counter::all();
+        $heroItems = HeroItem::all();
 
-        return view('portfolio.index', compact('services', 'counters'));
+        return view('portfolio.index', compact('services', 'counters', 'heroItems'));
     }
     
 
